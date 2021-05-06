@@ -9,14 +9,14 @@ import numpy as np
 # Don't change the list name 'Classes'          #
 #################################################
 
+import string 
+alphabet_string = string.ascii_lowercase
+
+# alphabet_list = list(alphabet_string)
+
+
 # Class에 맞게 바꿔줘야함
-classes = [
-"chair",
-"handle",
-"table",
-"button",
-"person",
-]
+classes = list(alphabet_string)
 
 # Get 'images' and 'annotations' info
 def images_annotations_info(opt):
@@ -152,7 +152,7 @@ def get_args():
 if __name__ == '__main__':
     opt = get_args()
     output_name = opt.output
-    output_path = 'output/' + output_name + '.json'
+    output_path = '/content/' + output_name + '.json'
 
     print("Start!")
 
